@@ -64,24 +64,36 @@ L’objectif est d’offrir une **interface moderne, dynamique et responsive**, 
 
 ##   Structure du projet  
 ```
-/gaming-platform
+/Brief 3:
 │
-├── /frontend
-│   ├── index.html
-│   ├── styles/
-│   │   └── style.css
-│   └── scripts/
-│       └── script.js
+├── /pages
+│ ├── index.html
+│ ├── about.html
+│ ├── contact.html
+│ ├── events.html
+│ ├── tournaments.html
+│ ├── teams.html
+│ ├── blog.html
+│ ├── dashboard.html
+│ ├── sponsors.html
+│ ├── feedbacks.html
+│ ├── signin.html
+│ ├── signup.html
+│ ├── assets/
+│ │ ├── images/
+│ │ ├── icons/
+│ │ └── css/
+│ │ └── style.css
+│ └── js/
+│ └── script.js
 │
 ├── /design
-│   ├── maquettes.fig
-│   └── design-system/
+│ └── maquettes.fig
 │
 ├── /docs
-│   ├── compte-rendu-jour1.md
-│   └── planification.md
+│ └── README.md
 │
-└── README.md
+└── LICENSE
 ```
 
 ---
@@ -123,7 +135,7 @@ L’objectif est d’offrir une **interface moderne, dynamique et responsive**, 
    git clone https://github.com/moijxbwlfjod-design/Brief-3.git
    ```
 2. Ouvre `index.html` dans ton navigateur.  
-3. (Optionnel) Héberge le site via **GitHub Pages**.  
+3. Héberge le site via **GitHub Pages**.  
 
 ---
 
