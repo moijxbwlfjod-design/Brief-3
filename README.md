@@ -90,7 +90,7 @@ Travail collaboratif et structuré sous supervision technique.
 | Membre | Rôle / Contribution Principale | Pages ou Composants Développés |
 |:-------|:-------------------------------|:-------------------------------|
 | **Otman** | Scrum master | Home, Navbar, Contact, Feedbacks |
-| **Ilyas** | Product Designer | About, Sponsors, Blog |
+| **Ilyass** | Product Designer | About, Sponsors, Blog |
 | **Achraf** | Product Owner | Events, Dashboard |
 | **Mohamed** | Team Leader | Teams, Tournaments |
 
