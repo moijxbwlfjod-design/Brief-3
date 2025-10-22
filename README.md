@@ -1,102 +1,140 @@
-# 🌐 Nexus Front-End Project
+#  Gaming Platform Website  
 
-## 🚀 Description
-Le projet **Nexus** est une plateforme web interactive visant à regrouper plusieurs fonctionnalités liées aux événements, tournois et communautés en ligne.  
-Le but principal est de concevoir un site moderne, réactif et ergonomique, tout en garantissant une expérience utilisateur fluide.
+Une **plateforme web interactive et réactive** dédiée aux tournois e-sport et aux joueurs, offrant une expérience fluide et engageante sur tous les appareils.  
 
 ---
 
-## 🧱 Pages Développées
-- 🏠 **Home**  
-- 📞 **Contact**  
-- 🗓️ **Events**  
-- 🏆 **Tournaments**  
-- 🧑‍🤝‍🧑 **Teams**  
-- 📰 **Blog**  
-- 🧭 **About**  
-- 💬 **Feedbacks**  
-- 🤝 **Our Sponsors**  
-- 🧾 **Dashboard**  
-- 🔐 **Sign In / Sign Up**
+##  À propos du projet  
+
+Ce projet vise à **moderniser et rendre interactive une plateforme e-sport**.  
+L’objectif est d’offrir une **interface moderne, dynamique et responsive**, permettant :  
+- la **visualisation des tournois à venir**,  
+- la **consultation des classements de joueurs**,  
+- la **navigation fluide** sur toutes tailles d’écran,  
+- et l’intégration de **composants interactifs** comme les modals, carrousels, formulaires validés, etc.  
 
 ---
 
-## 🧩 Outils Utilisés
-- **HTML5**  
-- **CSS3 (Flexbox, Grid)**  
-- **JavaScript (DOM manipulation, animations)**  
-- **Figma** (Design UI/UX)  
-- **Git & GitHub** (Versioning & hosting)  
-- **Canva / Illustrator** (pour éléments visuels)
+##  Objectifs principaux  
+- Rendre le site **réactif (responsive)** grâce aux breakpoints adaptés.  
+- Créer une **expérience utilisateur (UX)** fluide et intuitive.  
+- Concevoir une **interface visuellement attractive (UI)** à travers Figma.  
+- Intégrer des **composants modulaires** en HTML, CSS et JS.  
+- Optimiser la **performance et l’accessibilité (WCAG)**.  
 
 ---
 
-## ⚙️ Fonctionnalités
-- Barre de navigation dynamique  
-- Pages responsive (adaptées à tous les écrans)  
-- Système de connexion et d'inscription  
-- Page de gestion des tournois et équipes  
-- Section Blog et Feedback  
-- Intégration du tableau de bord (Dashboard)  
+##  Fonctionnalités clés  
+
+###  Interface Utilisateur
+- **Hero Banner** avec overlay et texte dynamique.  
+- **Grille de tournois à venir** avec date, jeu, lieu et bouton d’inscription.  
+- **Leaderboard** : classement responsive avec rang, pseudo, score et avatar.  
+- **Profil joueur** avec statistiques et jeu favori.  
+- **Section “Match en direct”** stylisée sans JS.  
+- **Menu latéral fixe** et **header sticky** avec navigation fluide.  
+
+###  Expérience Utilisateur
+- **Validation de formulaires en temps réel** via Parsley.js.  
+- **Optimisation des images et performances.**  
+- **Respect des standards d’accessibilité WCAG.**  
 
 ---
 
-## 🧠 Problèmes Rencontrés
-- Difficulté d’alignement des éléments avec Flexbox/Grid  
-- Gestion du responsive sur petits écrans  
-- Organisation du code CSS entre plusieurs pages  
-- Synchronisation du travail en équipe via Git
+##  Responsive Design (Breakpoints)  
+
+| Appareil | Largeur |  
+|-----------|----------|  
+| Mobile (portrait) | ≤ 767px |  
+| Tablette (portrait) | 768px – 1023px |  
+| Ordinateur portable | 1024px – 1279px |  
+| Grand écran | ≥ 1280px |  
 
 ---
 
-## 💡 Solutions Apportées
-- Utilisation cohérente de **Flexbox** et **Grid**  
-- Ajout de **media queries** pour le responsive  
-- Création d’un **style global** partagé  
-- Mise en place d’une **organisation Git structurée**
+##  Technologies utilisées  
+- **HTML5** – Structure et sémantique du site  
+- **CSS3** – Mise en forme et design responsive  
+- **JavaScript (modulaire)** – Interactivité et composants dynamiques  
+- **Parsley.js** – Validation de formulaires  
+- **Figma** – Maquettes UI/UX haute fidélité  
+- **GitHub Pages** – Hébergement du site  
 
 ---
 
-## 🎯 Objectif du Projet
-Créer une plateforme complète et fonctionnelle regroupant toutes les sections principales d’un site communautaire esport, avec un design professionnel et un code propre.
+##   Structure du projet  
+```
+/gaming-platform
+│
+├── /frontend
+│   ├── index.html
+│   ├── styles/
+│   │   └── style.css
+│   └── scripts/
+│       └── script.js
+│
+├── /design
+│   ├── maquettes.fig
+│   └── design-system/
+│
+├── /docs
+│   ├── compte-rendu-jour1.md
+│   └── planification.md
+│
+└── README.md
+```
 
 ---
 
-## 🎬 Démo
-👉 *(Lien vers la démo ou la version hébergée du site)*  
+##  Équipe du projet  
+
+| Rôle | Nom | Responsabilités principales |  
+|------|------|-----------------------------|  
+|  **Scrum Master** | Otman | Planification, organisation des sprints, suivi des tâches et du workflow |  
+|  **Product Designer** | Ilyas | Création des maquettes, Design System, prototype Figma |  
+|  **Team Leader / Dév Front-End** | Mohamed | Architecture du code, intégration responsive, supervision technique |  
+|  **Product Owner** | Achraf | Définition des fonctionnalités, gestion du backlog, vision produit |  
 
 ---
 
-## 👨‍💻 Équipe & Rôles
-Chaque membre a développé au minimum cinq composants, en respectant une répartition équilibrée des tâches.  
-Travail collaboratif et structuré sous supervision technique.
+##  Organisation du Sprint  
+
+| Jour | Livrables | Objectifs |  
+|------|------------|------------|  
+| **Jour 1** | Sprint Planning | Création du GitHub, définition des tâches, setup du README et du projet |  
+| **Jour 2** | UX/UI Design | Création du Design System et maquettes sur Figma |  
+| **Jour 3-4** | Développement Front | Intégration HTML/CSS/JS des composants et des pages principales |  
+| **Jour 5** | Déploiement + Présentation | Hébergement GitHub Pages + présentation finale du projet |  
 
 ---
 
-## 📅 Évaluation
-
-### 🔹 Présentation Finale
-- **10 min :** Démonstration du site  
-- **15 min :** Explication du code  
-
-### 🔹 Challenge Technique
-- **Durée :** 1h30 + 15 min QCM  
-- **Note minimale :** 70 %
+##   Livrables finaux  
+- Site web complet et responsive  
+- Maquettes haute-fidélité sur Figma  
+- Code modulaire et documenté  
+- Déploiement sur GitHub Pages  
+- Compte rendu du projet (Docs)  
 
 ---
 
-## 🧑‍🤝‍🧑 Équipe & Répartition des Tâches
-
-| Membre | Rôle / Contribution Principale | Pages ou Composants Développés |
-|:-------|:-------------------------------|:-------------------------------|
-| **Otman** | Scrum master | Home, Navbar, Contact, Feedbacks |
-| **Ilyass** | Product Designer | About, Sponsors, Blog |
-| **Achraf** | Product Owner | Events, Dashboard |
-| **Mohamed** | Team Leader | Teams, Tournaments |
-
-> 🧩 Répartition équilibrée et respect du travail collaboratif sur GitHub.
+##  Installation & utilisation  
+1. Clone le dépôt :  
+   ```bash
+   git clone https://github.com/moijxbwlfjod-design/Brief-3.git
+   ```
+2. Ouvre `index.html` dans ton navigateur.  
+3. (Optionnel) Héberge le site via **GitHub Pages**.  
 
 ---
 
-## 🏁 Résultat Attendu
-Un site fluide, moderne et responsive, démontrant la maîtrise des bases du **Front-End Development**.
+##  Déploiement  
+Le projet sera disponible en ligne via **GitHub Pages** :  
+ [https://username.github.io/gaming-platform/](https://username.github.io/gaming-platform/)  
+
+---
+
+##  Licence  
+Ce projet est réalisé dans le cadre d’un **projet académique collaboratif**.  
+L’utilisation du code ou du design sans autorisation est interdite.  
+
+---
