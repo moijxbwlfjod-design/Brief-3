@@ -89,10 +89,10 @@ Travail collaboratif et structuré sous supervision technique.
 
 | Membre | Rôle / Contribution Principale | Pages ou Composants Développés |
 |:-------|:-------------------------------|:-------------------------------|
-| **Otman ** | Développement Front-End & intégration CSS | Home, Navbar, Contact, Feedbacks |
-| **Ilyas** | Design Figma & intégration HTML | About, Sponsors, Blog |
-| **Achraf** | Gestion des événements & Dashboard | Events, Dashboard |
-| **Mohamed** | Intégration des tournois et équipes | Teams, Tournaments |
+| **Otman** | Scrum master | Home, Navbar, Contact, Feedbacks |
+| **Ilyas** | Product Designer | About, Sponsors, Blog |
+| **Achraf** | Product Owner | Events, Dashboard |
+| **Mohamed** | Team Leader | Teams, Tournaments |
 
 > 🧩 Répartition équilibrée et respect du travail collaboratif sur GitHub.
 
