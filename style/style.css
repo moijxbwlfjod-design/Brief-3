@@ -90,7 +90,7 @@ body{
     height: 30px;
     justify-content: center;
     align-items: center;
-    margin: 7px 0 0px 55px
+    margin: 7px 0 0px 55px;
 }
 .copyright {
     display: flex;
