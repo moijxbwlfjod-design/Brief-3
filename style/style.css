@@ -1,9 +1,40 @@
 *{
     margin: 0;
     padding: 0;
-    background: #18082E;
+    
 }
-.navbar{
+body{
+    background-color: #18082E;
+}
+button{
+    cursor: pointer;
+}
+p{
+color: #B7B7B7;
+font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+.btn-primary button{
+    background-color: #EFBF04;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    width: fit-content;
+    height: 5vh;
+    font-weight: bold;
+    padding: 2px 20px;
+    color: #ffffff;
+}
+.btn-second button{
+   background-color: transparent;
+   border: 3px solid #EFBF04;
+   border-radius: 50px;
+   height: 5vh;
+   padding: 2px 20px;
+   color: #EFBF04;
+   font-weight: bolder;
+}
+.navbar-mb{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,16 +42,80 @@
     background: #18082E;
     padding:  0 2%;
 }
-.nav-content a{
 
-}
-.nav-content{
+.nav-content , .nav-btn{
     display: none;
 }
 
+.hero {
+  background-image: url("/pages/img/Signupmobile.png");
+  object-fit:contain;
+  background-size: cover;
+  background-repeat: no-repeat;     
+  background-position: center;
+  width: 100%;
+  height: 70vh;                  
+  display: flex;             
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
 }
-body{
-    background-color: #ffffff;
+.hero-text{
+position: absolute;
+top: 30%;
+gap:20px;
+height: 30vh;
+display: flex;
+flex-direction: column;
+
+}
+.hero-text h1{
+color: white;
+font-family: "BBH Sans Bogle", sans-serif;
+
+  font-style: normal;
+  letter-spacing: 1.5px;
+}
+.hero-text p{
+    
+}
+.signupNow{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    
+}
+.logoS{
+    background-image: url("/pages/img/logo2.png");
+    height: 10vh;
+    width: 15vw;
+    object-fit: cover;
+    background-size:cover; 
+    background-repeat: no-repeat; 
+        background-position: center;
+    
+     
+}
+.signupNow-card{
+background-color: #290636;
+border: 1px solid #B7B7B7;
+width: 70%;
+border-radius: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height:100%;
+gap: 5vh;
+text-align: center;
+}
+.signupNow-txt{
+    height: fit-content;
 }
 
 .footer{
@@ -98,4 +193,56 @@ body{
     color: #ada3a3;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: smaller;
+}
+
+    @media screen and (min-width: 769px) {
+  .open-menu,
+  .close-menu {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: #18082E; 
+    
+  }
+
+
+  .nav-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+.nav-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+    .nav-content ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-content a {
+    text-decoration: none;
+    color:#ada3a3;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+
+  }
+
+.hero h1{
+    font-size: 80px;
+}
 }
