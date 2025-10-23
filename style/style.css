@@ -30,22 +30,32 @@ body{
     flex-direction: column;
     padding: 20px;
     justify-content: space-between;
+    height: 100%;
+    width: auto;
 }
 
+.logo{
+    text-decoration: none;
+    margin-bottom: 15px;
+}
 .logo img{
     height: 50px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-
 .logo i{
     color: #ffffff;
     display: inline;
     justify-content: space-between;
     margin-right: 10px;
+    text-decoration: none;
 }
-
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .links h4{
     font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -80,7 +90,7 @@ body{
     height: 30px;
     justify-content: center;
     align-items: center;
-    margin: 50px 0 0 60px;
+    margin: 7px 0 0px 55px
 }
 .copyright {
     display: flex;
