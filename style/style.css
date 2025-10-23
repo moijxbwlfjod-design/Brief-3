@@ -1,6 +1,23 @@
 *{
     margin: 0;
     padding: 0;
+    background: #18082E;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #18082E;
+    padding:  0 2%;
+}
+.nav-content a{
+
+}
+.nav-content{
+    display: none;
+}
+
 }
 body{
     background-color: #ffffff;
