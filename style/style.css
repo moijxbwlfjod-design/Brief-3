@@ -465,6 +465,7 @@ color: #fff;
     color: #fff;
 }
 
+
 .social-buttons {
     display: flex;
     justify-content: center;
@@ -476,7 +477,8 @@ color: #fff;
     display: flex;
     align-items: center;
     gap: 6px;
-    background: #fff;
+    background: #222222;
+    color: #fff;
     border: none;
     padding: 8px 12px;
     border-radius: 6px;
