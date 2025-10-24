@@ -26,6 +26,145 @@ h3{
     color: #EFBF04;
     font-family: "Montserrat", sans-serif;
 }
+/* about us */
+.about{
+    background-image: url(/pages/img/about\ us.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #18082E;
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.about h2{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #EFBF04;
+    font-weight: 900;
+    font-size: xx-large;
+    padding: 40px;
+}
+.text h5{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #fdab5e;
+    font-weight: 700;
+    font-size: x-large;
+    padding: 40px;
+}
+.text p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-style: oblique;
+    color: #f6f6f6;
+    font-weight: 400;
+    font-size: larger;
+    padding: 10px 50px;
+    text-align: center;
+}
+/* about us end */
+
+/* sponsors */
+.sponsors{
+    background-color: #200b3e;
+    width: 100%;
+    height: auto;
+}
+.sponsors h3{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #EFBF04;
+    font-weight: 600;
+    font-size: x-large;
+    padding: 40px;
+}
+.sponsors p{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #ada3a3;
+    font-weight: 400;
+    font-size: large;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.sponsorlogo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.sponsorlogo img{
+    width: 60px;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+/* sponsors end*/
+
+
+.blog{
+    background-image: url(/pages/img/bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #18082E;
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.blog h2{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #EFBF04;
+    font-weight: 900;
+    font-size: xx-large;
+    padding: 40px;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.blogcard{
+    width: 390px;
+    height: 310px;
+    background-color: #2B0C52;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: transform 0.75s;
+}
+.blogcard:hover{
+    transform: scale(1.1);
+}
+.blogcard img{
+    width: 390px;
+    height: 200px;
+    border-radius: 30px;
+}
+.blogcard h4{
+    padding: 0 10px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.blogs{
+    color: #ada3a3;
+    font-size: medium;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+/* blog end */
 /* HOME PAGE */
 .btn-primary button{
     background-color: #EFBF04;
@@ -146,9 +285,6 @@ font-family: "BBH Sans Bogle", sans-serif;
 
   font-style: normal;
   letter-spacing: 1.5px;
-}
-.hero-text p{
-    
 }
 .signupNow{
     height: 40vh;
@@ -406,7 +542,7 @@ object-fit: cover;
     height: 30px;
     justify-content: center;
     align-items: center;
-    margin: 7px 0 0px 55px
+    margin: 7px 0 0px 55px;
 }
 .copyright {
     display: flex;
