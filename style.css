@@ -64,6 +64,14 @@ html{
     transition: 300ms;
 }
 
+.left_bar__sections__logout a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
 .left_bar:hover .left_bar__sections__logout{
     width: 12rem;
     display: flex;
@@ -134,9 +142,6 @@ html{
 }
 
 .left_bar__sections__logout{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 0.7rem;
     position: absolute;
     margin-bottom: 10px;

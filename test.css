@@ -1,3 +1,28 @@
+.content a{
+    text-decoration: none;
+    color: red;
+    background-color: black;
+    display: block;
+}
+
+.content{
+    display: none;
+    position: absolute;
+}
+
+.main:hover .content{
+    display: block;
+}
+
+.main{
+    background-color: red;
+    width: 20px;
+}
+
+.left_bar__content{
+    display: flex;
+}
+
 
 
 
