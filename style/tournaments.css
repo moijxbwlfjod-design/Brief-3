@@ -52,7 +52,7 @@ body{
 }
 
 .nav__logo{
-    background-image: url(/pages/img/Logo.png);
+    background-image: url(/img/Logo.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -63,7 +63,7 @@ body{
 .main__image{
     width: 100vw;
     height: 40rem;
-    background-image: url(/pages/img/1.png);
+    background-image: url(/img/1.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,7 +105,7 @@ body{
 .card{
     width: 33rem;
     height: 18.75rem;
-    background-image: url(/pages/img/2.png);
+    background-image: url(/img/2.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,23 +116,23 @@ body{
 }
 
 .fc{
-    background-image: url(/pages/img/4.png);
+    background-image: url(/img/4.png);
 }
 
 .cs2{
-    background-image: url(/pages/img/3.png);
+    background-image: url(/img/3.png);
 }
 
 .lol{
-    background-image: url(/pages/img/5.png);
+    background-image: url(/img/5.png);
 }
 
 .rockL{
-    background-image: url(/pages/img/6.png);
+    background-image: url(/img/6.png);
 }
 
 .tekken {
-    background-image: url(/pages/img/7.png);
+    background-image: url(/img/7.png);
 }
 
 .card__title{
