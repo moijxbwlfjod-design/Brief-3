@@ -18,6 +18,7 @@ p {
     font-weight: bold;
     font-size: small;
 }
+
 h2{
     color: #EFBF04;
     font-family: "Montserrat", sans-serif;
@@ -296,8 +297,37 @@ h3{
     font-style: normal;
     letter-spacing: 1.5px;
 }
-.hero-text p{
-    
+
+.signupNow {
+  background-image: url("/pages/img/Signupmobile.png");
+  object-fit:contain;
+  background-size: cover;
+  background-repeat: no-repeat;     
+  background-position: center;
+  width: 100%;
+  height: 70vh;                  
+  display: flex;             
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+}
+.hero-text{
+position: absolute;
+top: 30%;
+gap:20px;
+height: 30vh;
+display: flex;
+flex-direction: column;
+
+}
+.hero-text h1{
+color: white;
+font-family: "BBH Sans Bogle", sans-serif;
+
+  font-style: normal;
+  letter-spacing: 1.5px;
 }
 .signupNow{
     height: 40vh;
@@ -354,7 +384,6 @@ h3{
     background-repeat: no-repeat;
     width: 100%;
     text-align: center;
-    
     padding: 0 2%;
 }
 .games-row{
@@ -367,7 +396,6 @@ h3{
     position: relative;
     overflow: hidden;
     flex: 0 0 45%;
-    
 }
 .game-card img{
 border:solid 1px #ada3a3;
@@ -385,7 +413,88 @@ object-fit: cover;
     flex: 0 0 45%;
     
 }
-/* Games mb */
+/* --Games mb --*/
+/* TEAMS mb */
+.Teams{ /*s*/
+    background-image: url(/pages/img/Signupmobile.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin: 0 5%;
+    padding-top: 10%;
+}
+.teams-row{
+   
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.tm-card{
+}
+.teams-card{
+    border: 1px solid #d9a903;
+    border-radius: 10px;
+    width: 70vw;
+    background-color: #02052b; 
+    
+}
+.imag-team img{
+    height: 150px;
+    width:100%;
+    border-radius: 9px;
+    object-fit:cover;
+}
+.card-tm > p:first-of-type{
+    color: white;
+   font-weight: bold;
+    text-align: center;
+} 
+.card-tm-txt{
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: center;
+padding-top: 5%;
+gap: 5%;
+
+}
+.membre,.wins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nm,.wn{
+    display: flex;   
+    align-items: center;
+    gap: 15%;
+    padding-top: 20%;
+}
+.btn-tm{
+    display: flex;
+    justify-content: center;
+}
+.btn-tm button{
+background-color: #EFBF04;
+padding: 5px;
+border: none;
+color: white;
+font-weight: bold;
+border-radius: 9px;
+margin: 30px 0;
+padding: 5px 10px;
+
+}
+
+/* TEAMS mb */
+
 
 @media screen and (min-width: 769px) {
   .open-menu,
@@ -395,6 +504,47 @@ object-fit: cover;
   .mobile-only {
     display: none !important;
   }
+
+    .desktop-only {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px;
+        background-color: #18082E;
+
+
+    }
+
+
+    .nav-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: static;
+        right: auto;
+        height: auto;
+    }
+
+    .nav-btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: none !important;
+    }
 
     .desktop-only {
         display: block;
@@ -452,6 +602,19 @@ object-fit: cover;
         width: 100%;
         background-image: url("/pages/img/Backgorund\ hero.webp");
 
+  }
+.hero{
+    height: 80vh;
+  width: 100%;
+  background-image: url("/pages/img/squide.webp");
+
+    }
+
+    .hero {
+        height: 80vh;
+        width: 100%;
+        background-image: url("/pages/img/Backgorund\ hero.webp");
+
 
     }
 
@@ -464,6 +627,12 @@ object-fit: cover;
     }
 }
 
+.hero h1{
+    font-size: 80px;
+}
+.signupNow{
+    height: 65vh;
+}
 /* HOME PAGE */
 /* GAMES DESKTOP */
 .games{
@@ -476,8 +645,8 @@ object-fit: cover;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    
 }
+
 .games-row{
     display: flex;
     flex-direction: row;
@@ -489,13 +658,72 @@ object-fit: cover;
     width: 400px;
     flex: 0 0 22%;
     margin-bottom: 1%;
-    
+    transition: transfrom 1s;
+}
+.game-card:hover{
+    transform: scale(1.1);
 }
 .games-card img{
     width: 100%;
     height: auto;
 }
+/* Teams DESKTOP*/
+.Teams{ /*s*/
+    background-image: url(/pages/img/squide.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    
+}
+.teams-card{
+    border: 1px solid #d9a903;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #02052b; 
+    
+}
+.teams-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;    
+}
+.imag-team img{
+    height: 150px;
+    width:100%;
+    border-radius: 9px;
+    object-fit:cover;
+}
+.card-tm > p:first-of-type{
+    color: white;
+   font-weight: bold;
+    text-align: center;
+} 
 
+.membre,.wins{
+    color: white;
+    width: 60px;
+    display: flex;
+}
+
+
+.btn-tm button{
+background-color: #EFBF04;
+padding: 5px;
+border: none;
+color: white;
+font-weight: bold;
+border-radius: 9px;
+margin: 30px 0;
+padding: 5px 10px;
+
+}
+.wn ,.nm{
+    padding-bottom: 15px;
+    gap: 2%;
+}
 }
 
 /* FOOTER */
