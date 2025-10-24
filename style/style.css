@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -47,6 +48,63 @@ font-family: "Roboto", sans-serif;
 .nav-content , .nav-btn{
     display: none;
 }
+
+.nav-content {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #18082E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.nav-content ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-content a{
+ text-decoration: none;
+    color:#ada3a3;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+.nav-content.active {
+  right: 0;
+}
+
+.nav-content .open-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.nav-overlay.active {
+  display: block;
+}
+
 
 .hero {
   background-image: url("/pages/img/Signupmobile.png");
@@ -118,20 +176,34 @@ text-align: center;
 .signupNow-txt{
     height: fit-content;
 }
+.desktop-only {
+  display: none;
+}
 
+.mobile-only {
+  display: block;
+  padding-top: 5%;
+}
 
 @media screen and (min-width: 769px) {
   .open-menu,
-  .close-menu {
-    display: none;
+  .close-menu{
+    display: none !important;
+  }
+  .mobile-only {
+    display: none !important;
   }
 
+  .desktop-only {
+    display: block;
+  }
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 60px;
     background-color: #18082E; 
+    
     
   }
 
@@ -142,6 +214,9 @@ text-align: center;
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: static;
+    right: auto;
+    height: auto;
   }
 
 .nav-btn{
@@ -166,9 +241,18 @@ text-align: center;
     font-family: "Montserrat", sans-serif;
 
   }
+.hero{
+    height: 80vh;
+  width: 100%;
+  background-image: url("/pages/img/Backgorund\ hero.webp");
 
+
+}
 .hero h1{
     font-size: 80px;
+}
+.signupNow{
+    height: 65vh;
 }
 }
 /* HOME PAGE */
