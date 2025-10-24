@@ -390,7 +390,6 @@ font-family: "BBH Sans Bogle", sans-serif;
 }
 .game-card{
     position: relative;
-    overflow: hidden;
     flex: 0 0 45%;
 }
 .game-card img{
@@ -491,6 +490,64 @@ padding: 5px 10px;
 
 
 @media screen and (min-width: 769px) {
+    /* Teams DESKTOP*/
+.Teams{ /*s*/
+    background-image: url(./img/squide.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    
+}
+.teams-card{
+    border: 1px solid #d9a903;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #02052b; 
+    
+}
+.teams-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;    
+}
+.imag-team img{
+    height: 150px;
+    width:100%;
+    border-radius: 9px;
+    object-fit:cover;
+}
+.card-tm > p:first-of-type{
+    color: white;
+   font-weight: bold;
+    text-align: center;
+} 
+
+.membre,.wins{
+    color: white;
+    width: 60px;
+    display: flex;
+}
+
+
+.btn-tm button{
+background-color: #EFBF04;
+padding: 5px;
+border: none;
+color: white;
+font-weight: bold;
+border-radius: 9px;
+margin: 30px 0;
+padding: 5px 10px;
+
+}
+.wn ,.nm{
+    padding-bottom: 15px;
+    gap: 2%;
+}
+
   .open-menu,
   .close-menu{
     display: none !important;
@@ -590,27 +647,12 @@ padding: 5px 10px;
         font-family: "Montserrat", sans-serif;
 
     }
-
-    .hero {
-        height: 80vh;
-        width: 100%;
-        background-image: url("./img/Backgorund\ hero.webp");
-
-  }
 .hero{
     height: 80vh;
   width: 100%;
   background-image: url("./img/squide.webp");
+ }
 
-    }
-
-    .hero {
-        height: 80vh;
-        width: 100%;
-        background-image: url("./img/Backgorund\ hero.webp");
-
-
-    }
 
     .hero h1 {
         font-size: 80px;
@@ -621,9 +663,7 @@ padding: 5px 10px;
     }
 }
 
-.hero h1{
-    font-size: 80px;
-}
+
 .signupNow{
     height: 65vh;
 }
@@ -660,63 +700,6 @@ padding: 5px 10px;
 .games-card img{
     width: 100%;
     height: auto;
-}
-/* Teams DESKTOP*/
-.Teams{ /*s*/
-    background-image: url(./img/squide.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    margin: 0;
-    
-}
-.teams-card{
-    border: 1px solid #d9a903;
-    border-radius: 10px;
-    width: 300px;
-    background-color: #02052b; 
-    
-}
-.teams-row{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;    
-}
-.imag-team img{
-    height: 150px;
-    width:100%;
-    border-radius: 9px;
-    object-fit:cover;
-}
-.card-tm > p:first-of-type{
-    color: white;
-   font-weight: bold;
-    text-align: center;
-} 
-
-.membre,.wins{
-    color: white;
-    width: 60px;
-    display: flex;
-}
-
-
-.btn-tm button{
-background-color: #EFBF04;
-padding: 5px;
-border: none;
-color: white;
-font-weight: bold;
-border-radius: 9px;
-margin: 30px 0;
-padding: 5px 10px;
-
-}
-.wn ,.nm{
-    padding-bottom: 15px;
-    gap: 2%;
 }
 
 
