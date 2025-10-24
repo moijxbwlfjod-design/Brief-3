@@ -31,7 +31,7 @@ h3{
 }
 /* about us */
 .about{
-    background-image: url(/pages/img/about\ us.webp);
+    background-image: url(./img/about\ us.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -112,7 +112,7 @@ h3{
 
 
 .blog{
-    background-image: url(/pages/img/bg.webp);
+    background-image: url(./img/bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -265,7 +265,7 @@ h3{
 
 
 .hero {
-    background-image: url("/pages/img/Signupmobile.png");
+    background-image: url("./img/Signupmobile.png");
     object-fit: contain;
     background-size: cover;
     background-repeat: no-repeat;
@@ -336,7 +336,7 @@ font-family: "BBH Sans Bogle", sans-serif;
 }
 
 .logoS {
-    background-image: url("/pages/img/logo2.png");
+    background-image: url("./img/logo2.png");
     height: 10vh;
     width: 15vw;
     object-fit: cover;
@@ -374,7 +374,7 @@ font-family: "BBH Sans Bogle", sans-serif;
 }
 /* GAMES */
 .games{
-    background-image: url(/pages/img/Signupmobile.webp);
+    background-image: url(./img/Signupmobile.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -412,7 +412,7 @@ object-fit: cover;
 /* --Games mb --*/
 /* TEAMS mb */
 .Teams{ /*s*/
-    background-image: url(/pages/img/Signupmobile.webp);
+    background-image: url(./img/Signupmobile.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -594,20 +594,20 @@ padding: 5px 10px;
     .hero {
         height: 80vh;
         width: 100%;
-        background-image: url("/pages/img/Backgorund\ hero.webp");
+        background-image: url("./img/Backgorund\ hero.webp");
 
   }
 .hero{
     height: 80vh;
   width: 100%;
-  background-image: url("/pages/img/squide.webp");
+  background-image: url("./img/squide.webp");
 
     }
 
     .hero {
         height: 80vh;
         width: 100%;
-        background-image: url("/pages/img/Backgorund\ hero.webp");
+        background-image: url("./img/Backgorund\ hero.webp");
 
 
     }
@@ -630,7 +630,7 @@ padding: 5px 10px;
 /* HOME PAGE */
 /* GAMES DESKTOP */
 .games{
-    background-image: url("/pages/img/squide.webp");
+    background-image: url("./img/squide.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -663,7 +663,7 @@ padding: 5px 10px;
 }
 /* Teams DESKTOP*/
 .Teams{ /*s*/
-    background-image: url(/pages/img/squide.webp);
+    background-image: url(./img/squide.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
