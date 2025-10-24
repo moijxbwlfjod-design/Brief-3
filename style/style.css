@@ -16,6 +16,16 @@ font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: small;
 }
+h2{
+    color: #EFBF04;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+h3{
+    color: #EFBF04;
+    font-family: "Montserrat", sans-serif;
+}
 /* HOME PAGE */
 .btn-primary button{
     background-color: #EFBF04;
@@ -179,13 +189,53 @@ text-align: center;
 .desktop-only {
   display: none;
 }
-
 .mobile-only {
   display: block;
   padding-top: 5%;
 }
+/* GAMES */
+.games{
+    background-image: url(/pages/img/Signupmobile.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    
+    padding: 0 2%;
+}
+.games-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.game-card{
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 45%;
+    
+}
+.game-card img{
+border:solid 1px #ada3a3;
+width: 200px;
+height: 250px;
+display: block;
+object-fit: cover;
+
+}
+.game-info{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: left;
+    flex: 0 0 45%;
+    
+}
+/* Games mb */
 
 @media screen and (min-width: 769px) {
+    /* HOMEPAGE DESKTOP */
   .open-menu,
   .close-menu{
     display: none !important;
@@ -244,7 +294,7 @@ text-align: center;
 .hero{
     height: 80vh;
   width: 100%;
-  background-image: url("/pages/img/Backgorund\ hero.webp");
+  background-image: url("/pages/img/squide.webp");
 
 
 }
@@ -254,8 +304,40 @@ text-align: center;
 .signupNow{
     height: 65vh;
 }
-}
 /* HOME PAGE */
+/* GAMES DESKTOP */
+.games{
+    background-image: url("/pages/img/squide.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+}
+.games-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 5%;
+    
+}
+.game-card{
+    width: 400px;
+    flex: 0 0 22%;
+    margin-bottom: 1%;
+    
+}
+.games-card img{
+    width: 100%;
+    height: auto;
+}
+
+}
+
 /* FOOTER */
 .footer{
     color: #ffffff;
