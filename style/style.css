@@ -1,9 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    background: #18082E;
+    box-sizing: border-box;
 }
-.navbar{
+
+body{
+    background-color: #18082E;
+}
+button{
+    cursor: pointer;
+}
+p{
+color: #B7B7B7;
+font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+h2{
+    color: #EFBF04;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+h3{
+    color: #EFBF04;
+    font-family: "Montserrat", sans-serif;
+}
+/* HOME PAGE */
+.btn-primary button{
+    background-color: #EFBF04;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    width: fit-content;
+    height: 5vh;
+    font-weight: bold;
+    padding: 2px 20px;
+    color: #ffffff;
+}
+.btn-second button{
+   background-color: transparent;
+   border: 3px solid #EFBF04;
+   border-radius: 50px;
+   height: 5vh;
+   padding: 2px 20px;
+   color: #EFBF04;
+   font-weight: bolder;
+}
+.navbar-mb{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,16 +54,222 @@
     background: #18082E;
     padding:  0 2%;
 }
-.nav-content a{
 
-}
-.nav-content{
+.nav-content , .nav-btn{
     display: none;
 }
 
+.nav-content {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #18082E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
 }
-body{
-    background-color: #ffffff;
+.nav-content ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-content a{
+ text-decoration: none;
+    color:#ada3a3;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+.nav-content.active {
+  right: 0;
+}
+
+.nav-content .open-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.nav-overlay.active {
+  display: block;
+}
+
+
+.hero {
+  background-image: url("/pages/img/Signupmobile.png");
+  object-fit:contain;
+  background-size: cover;
+  background-repeat: no-repeat;     
+  background-position: center;
+  width: 100%;
+  height: 70vh;                  
+  display: flex;             
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+}
+.hero-text{
+position: absolute;
+top: 30%;
+gap:20px;
+height: 30vh;
+display: flex;
+flex-direction: column;
+
+}
+.hero-text h1{
+color: white;
+font-family: "BBH Sans Bogle", sans-serif;
+
+  font-style: normal;
+  letter-spacing: 1.5px;
+}
+.signupNow{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    
+}
+.logoS{
+    background-image: url("/pages/img/logo2.png");
+    height: 10vh;
+    width: 15vw;
+    object-fit: cover;
+    background-size:cover; 
+    background-repeat: no-repeat; 
+        background-position: center;
+    
+     
+}
+.signupNow-card{
+background-color: #290636;
+border: 1px solid #B7B7B7;
+width: 70%;
+border-radius: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height:100%;
+gap: 5vh;
+text-align: center;
+}
+.signupNow-txt{
+    height: fit-content;
+}
+.desktop-only {
+  display: none;
+}
+.mobile-only {
+  display: block;
+  padding-top: 5%;
+}
+/* GAMES */
+.games{
+    background-image: url(/pages/img/Signupmobile.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    
+    padding: 0 2%;
+}
+.games-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.game-card{
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 45%;
+    
+}
+.game-card img{
+border:solid 1px #ada3a3;
+width: 200px;
+height: 250px;
+display: block;
+object-fit: cover;
+
+}
+.game-info{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: left;
+    flex: 0 0 45%;
+    
+}
+/* Games mb */
+
+@media screen and (min-width: 769px) {
+    /* HOMEPAGE DESKTOP */
+  .open-menu,
+  .close-menu{
+    display: none !important;
+  }
+  .mobile-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: #18082E; 
+    
+    
+  }
+
+
+  .nav-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: static;
+    right: auto;
+    height: auto;
+  }
+
+.nav-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
     .nav-content ul {
     display: flex;
@@ -316,3 +565,351 @@ color: #fff;
 }
 
 /* Sing up End */
+
+/* Tournaments */
+
+
+/* dashboard */
+
+
+
+.hb__content a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    font-size: 15px;
+    font-style: bold;
+
+}
+.nav__links{
+    list-style: none;
+    padding-left: 0;
+}
+
+.hb__content{
+    display: none;
+    position: absolute;
+    width: 130px;
+}
+.hb__button{
+    background-color: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 30px;
+   height: 30px; 
+   border: none;
+}
+
+.button:hover .hb__content{
+    display: block;
+}
+
+.hb__button__shape{
+    width: 100%;
+    height: 9px;
+    border-radius: 10px;
+}
+
+.hb__button:active .hb__content{
+    display: block;
+}
+
+.left_bar:hover{
+    width: 13rem;
+}
+
+.left_bar:hover .left_bar__content h3,.left_bar:hover .left_bar__sections__logout h3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transition: 300ms;
+}
+
+.left_bar__sections__logout a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.left_bar__content a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.left_bar:hover .left_bar__sections__logout{
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.left_bar:hover .left_bar__sections{
+    display: flex;
+    justify-content: center;
+}
+
+.left_bar:hover .left_bar__sections__logout{
+    margin-left: 0;
+}
+
+.left_bar:hover .left_bar__sections__one{
+    width: 13rem;
+}
+
+.dashboard__body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    flex-direction: column;
+    height: 10rem !important;
+}
+
+.left_bar{
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    height: 100%;
+    background-color: #EFBF04;
+}
+
+.left_bar__content{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    justify-content: center;
+}
+
+
+
+.left_bar__content h3, .left_bar__sections__logout h3{
+    display: none;
+    color: #2B0C52;
+}
+
+.left_bar h2{
+    text-align: center;
+    color: #2B0C52;
+}
+
+.left_bar__sections{
+    height: 100vh;
+}
+
+.left_bar__sections__one{
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.left_bar__sections__logout{
+    gap: 0.7rem;
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 0;
+    width: 4rem;
+    border: solid white 1.5px;
+    border-radius: 12px;
+    margin-left: 0.5rem;
+    background-color: red;
+}
+
+.left_bar__content:hover,.left_bar__content:hover svg, .left_bar__content:hover h3{
+    background-color: #2B0C52;
+    color: #EFBF04;
+    fill: #EFBF04;
+}
+
+.left_bar__sections__logout h3{
+    color: white;
+}
+
+.left_bar__sections__logout:hover{
+    background-color: rgb(192, 27, 27);
+    border: solid 1.5px rgb(218, 213, 213);
+}
+
+.dashboard__content{
+    width: 100%;
+    background-color: white !important;
+}
+
+
+
+.dashboard{
+    display: flex;
+    height: 100vh !important;
+}
+
+html{
+    background-color: white;
+}
+
+.upbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #dedfe1;
+}
+
+.dashboard_admin__cercle{
+    background-color: rgb(174, 173, 173);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard_admin{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dashboard_admin p{
+    font-family: serif;
+    font-style: bold;
+}
+
+.dashboard_admin span{
+    color: gray;
+}
+
+.card{
+    width: 13rem;
+    height: 6.25rem;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 1rem;
+    box-shadow: 1px 1px 10px black;
+    margin-top: 0.8rem;
+}
+
+.card:hover{
+    width: 14rem;
+    height: 7.25rem;
+    transition: 200ms;
+    background-color: rgb(239, 237, 237);
+    border-radius: 12px;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 1rem;
+    box-shadow: 1px 1px 10px black;
+}
+
+.card__1_icon{
+    width: 4rem;
+    height: 4rem;
+    background-color: #5FBAAF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card__1_icon svg{
+    width: 40px;
+    height: 40px;
+    fill: white;
+}
+
+.games{
+    background-color: rgb(91, 198, 255);
+}
+
+.users{
+    background-color: rgb(255, 190, 79);
+}
+
+.close{
+    background-color: red;
+}
+
+.cards__text p{
+    color: #6B7280;
+}
+
+.cards__text h2{
+    margin-top: -1rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+
+
+.main__card{
+    background-color: white;
+    width: 90%;
+    height:100;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 10rem;
+    margin-left: 4%;
+    margin-right: 4%;
+    box-shadow: 1px 1px 10px black;
+}
+
+
+.main__card__title{
+    font-size: 2rem;
+    margin-top: -9rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.main__card__containt__1{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    color: #6B7280;
+    border-bottom: solid 1px ; 
+}
+
+.main__card__containt{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.main__card__containt:not(:last-child){
+    border-bottom: solid 1px;
+}
+
